@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What's your favorite programming language?</h1>
+        </header>
+        <main>
+            <div class="poll">
+                <form id="pollForm">
+                    <label>
+                        <input type="radio" name="option" value="JavaScript"> JavaScript
+                    </label><br>
+                    <label>
+                        <input type="radio" name="option" value="Python"> Python
+                    </label><br>
+                    <label>
+                        <input type="radio" name="option" value="Java"> Java
+                    </label><br>
+                    <label>
+                        <input type="radio" name="option" value="C#"> C#
+                    </label><br>
+                    <button type="submit">Submit Vote</button>
+                </form>
+            </div>
+            <div id="pollResults" class="results">
+                <h2>Poll Results</h2>
+                <div id="resultJavaScript">JavaScript: 0%</div>
+                <div id="resultPython">Python: 0%</div>
+                <div id="resultJava">Java: 0%</div>
+                <div id="resultCSharp">C#: 0%</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
