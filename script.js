@@ -24,18 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         
         const selectedOption = document.querySelector('input[name="option"]:checked');
-        
         if (selectedOption) {
             const voteValue = selectedOption.value;
-            
-            votes[voteValu] += 1;  
-          
+            votes[voteValue] += 1;
+            updateResults();
         } else {
             alert('Please select an option before submitting.');
         }
-    });
-    
-    pollForm.addEventListen('submit', function (e) {  
-        console.log('Form submitted');
     });
 });
